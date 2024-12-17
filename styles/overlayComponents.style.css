@@ -1,0 +1,34 @@
+.button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    opacity: .1;
+    text-shadow: 0 0 10px #525252;
+    cursor: pointer;
+}
+
+body>.grid-container>.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body>.grid-container>.button-container>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body>.grid-container>.button-container>div>div {
+    z-index: 7;
+}
+
+body>.grid-container>.button-container>.right-button {
+    justify-content: end;
+}

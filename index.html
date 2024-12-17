@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/common.style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/background.style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/content.style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/overlayComponents.style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --default-image-scale: 1.15;
+            --base-image-transition-delay: 0.1
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-optical-sizing: auto;
+            font-style: normal;
+            user-select: none;
+            font-family: "Roboto Flex", sans-serif;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0;
+            position: absolute;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #373737;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="background-container" id="background-container" style="opacity: hidden;">
+            <div class="inner-image"></div>
+            <div class="middle-image"></div>
+            <div class="outer-image"></div>
+        </div>
+        <div class="container" id="container">
+            <div class="page" id="page">
+                <div class="heading" id="heading"></div>
+                <div class="content">
+                    I'm Shivam, an &ltengineer&gt by profession, and a part-time creator.
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="left-button" id="left-button">
+                <div class="button" onclick="Main.leftSwipe()">&lt</div>
+            </div>
+            <div class="right-button" id="right-button">
+                <div class="button" onclick="Main.rightSwipe()">&gt</div>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" width="0" height="0" style="display:none;"></canvas>
+    <script src="./pagesInfo.js"></script>
+    <script src="./scripts/utils.script.js"></script>
+    <script src="./scripts/setting.script.js"></script>
+    <script src="./scripts/main.script.js"></script>
+</body>
+
+</html>
